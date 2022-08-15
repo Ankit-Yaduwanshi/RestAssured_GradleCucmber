@@ -1,0 +1,45 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.2'
+	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+	id 'java'
+}
+
+group = 'learn'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'io.cucumber:cucumber-java:7.5.0'
+	implementation 'io.cucumber:cucumber-junit:7.5.0'
+
+	// https://mvnrepository.com/artifact/io.cucumber/cucumber-testng
+	implementation 'io.cucumber:cucumber-testng:7.5.0'
+
+	// https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+	//testImplementation 'io.rest-assured:rest-assured:4.5.1'
+	implementation 'io.rest-assured:rest-assured:4.5.1'
+	// https://mvnrepository.com/artifact/org.hamcrest/hamcrest
+	implementation 'org.hamcrest:hamcrest:2.2'
+	// https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+	implementation 'io.rest-assured:json-schema-validator:5.1.0'
+
+
+
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+//test{
+//	useTestNG()
+//}
