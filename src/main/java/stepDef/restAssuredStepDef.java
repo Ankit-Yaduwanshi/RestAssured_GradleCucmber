@@ -27,6 +27,9 @@ public class restAssuredStepDef extends BaseClass {
         System.out.println("In Rest assured");
         RestAssured.baseURI = baseurl;
         given().log().all().header("Content-Type", "application/json")
+//                 To add query and path parameter details in given request
+//                .queryParam("para1", "value1")
+//                .pathParam("para2","value2")
                 .when().get(endpoint)
                 .then().log().all().assertThat()
                 //to validate Schema just use matchesJsonSchemaInClasspath(filepath) in body
