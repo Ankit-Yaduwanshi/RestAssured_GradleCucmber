@@ -76,4 +76,5 @@ public class restAssuredStepDef extends BaseClass {
 //*****************NOTES*****************
 // 1- when JsonSchemaValidator is added then we dont use static in import
 // 2- else use in .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("src/main/resources/Input/SchemaUser.json"))
-// 3-
+// 3- **In schema validation at last where "required" tag contains parent payload attribute details provide this tag with value as false
+//      so that any missing attribute check will be performed using "additionalProperties": false,
