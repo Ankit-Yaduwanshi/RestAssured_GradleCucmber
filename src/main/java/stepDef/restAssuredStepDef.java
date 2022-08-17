@@ -78,3 +78,4 @@ public class restAssuredStepDef extends BaseClass {
 // 2- else use in .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("src/main/resources/Input/SchemaUser.json"))
 // 3- **In schema validation at last where "required" tag contains parent payload attribute details provide this tag with value as false
 //      so that any missing attribute check will be performed using "additionalProperties": false,
+// 4- For all JSON schema related help visit https://json-schema.org/
