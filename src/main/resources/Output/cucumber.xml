@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.047">
-    <testcase classname="Rest Assured" name="Running complete parameterized scenario for Rest Assured using RequestSpecification and Response" time="0.989">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.123">
+    <testcase classname="Rest Assured" name="Running complete parameterized scenario for Rest Assured using RequestSpecification and Response" time="1.063">
         <system-out><![CDATA[Given launch the GET request with baseurl "https://reqres.in" and endpoint "/api/users/2".passed
 Then validate the status code 200 firstName "Janet".........................passed
 And validate server "cloudflare" in the header response.....................passed

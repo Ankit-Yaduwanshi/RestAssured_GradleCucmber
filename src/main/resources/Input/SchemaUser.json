@@ -6,7 +6,7 @@
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer", "minLength": 1
+          "type": "integer", "minimum": 0,"maximum": 5, "multipleOf" : 1
         },
         "email": {
           "type": "string"
@@ -21,6 +21,7 @@
           "type": "string"
         }
       },
+      "additionalProperties": false,
       "required": [
         "id",
         "email",
